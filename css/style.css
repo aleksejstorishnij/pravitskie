@@ -1,0 +1,221 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #21252900;
+  background-color: #121212;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  /*наслодовать от родителя*/
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+
+
+a:focus, a:active {
+  outline: none;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  max-width: 1700px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+aside, nav, footer, header, section{
+  display: block;
+}
+.hero-section {
+    height: 900px;
+    margin-top: -20px;
+}
+
+
+.hero-section img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+.intro {
+    min-height: 100vh;
+}
+.navbar-collapse {
+  flex-grow: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+/* .slogan {
+  width: 700px;
+  color: white;
+  position: relative;
+  top: 30%;
+  left: 15%;
+  font-size: 40px;
+  margin-bottom: 50px;
+	font-family: 'Roboto', sans-serif;
+	  font-style: normal;
+} */
+.about {
+  position: relative;
+  top: -58px;
+  background: #0060d0;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.caption {
+  color: white;
+
+  font-size: 30px;
+  text-align: left;
+font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(215, 214, 214, 1);
+  text-align: left;
+  width: 700px;
+  margin-bottom: 100px;
+}
+.scroll {
+  color: rgb(255 255 255);
+}
+
+
+
+.heading {
+    padding: 20px 0;
+    display: block;
+    float: left;
+    text-transform: lowercase;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.8;
+    letter-spacing: 0.15em;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+
+.discription {
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+  color: #ffffff61;
+
+}
+.discriptions {
+    color: #222120;
+    line-height: 2;
+    /* letter-spacing: 0.1em;
+    font-size: 16px;
+    text-align: left; */
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 700;
+    font-style: normal;
+    text-align: left; */
+}
+.nav-col {
+    background-color: #0869c9;
+    /* height: 60px; */
+}
+.advantages {
+    background: white;
+}
+.advantagestext {
+    display: flex;
+    justify-content: center;
+    padding: 36px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+.floatr {
+    float: right;
+}
+.dasd {
+    display: flex;
+    width: 50%;
+    height: 40px;
+    background-color: #0869c9;
+}
+.text-center {
+    text-align: center!important;
+}
+.number_op {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    padding: 0px;
+    margin-top: -30px;
+}
+.imghous img {
+    width: 100%;
+}
+.slide_buttom svg {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+   }
+
+   .slide_buttom svg path {
+     fill: #fff;
+   }
+   .cifra {
+     font-size: 22px;
+     font-weight: bold;
+     color: #ffffff61;
+   }
+@media (max-width: 990px){
+  .navbar-collapse {
+      flex-grow: 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+}
