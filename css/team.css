@@ -126,9 +126,9 @@ html, body {
        letter-spacing: 0.1em;
        font-weight: bold;
    }
-   .intro {
+   /* .intro {
        min-height: 100vh;
-   }
+   } */
 @media screen and (max-width: 991.98px) {
 
     .navbar-collapse {
