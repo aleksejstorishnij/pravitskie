@@ -70,13 +70,17 @@ aside, nav, footer, header, section{
 .hero-section {
     height: 900px;
     margin-top: -20px;
+    position: relative;
+    overflow: hidden;
 }
 
 
 .hero-section img {
+  position: absolute;
     height: 100%;
     object-fit: cover;
     object-position: 50%;
+    opacity: 0.8;
 }
 .intro {
     min-height: 100vh;
@@ -176,6 +180,18 @@ font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1em;
     font-weight: bold;
 }
+.advantagestext_view {
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff61;
+  line-height: 200%;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
 .floatr {
     float: right;
 }
@@ -208,10 +224,28 @@ font-family: 'Roboto', sans-serif;
      fill: #fff;
    }
    .cifra {
-     font-size: 22px;
+     font-size: 30px;
      font-weight: bold;
      color: #ffffff61;
    }
+   .main_title{
+     font-family: 'Raleway', sans-serif;
+     font-weight: 800;
+     text-transform: uppercase;
+     line-height: 1.2;
+     font-size: 7rem;
+     text-align: center;
+     position: relative;
+letter-spacing: 50px;
+     color: #fff;
+     font-style: normal;
+     padding-top: 22%;
+   }
+/* .title_buttom{
+  padding-top: 37%;
+  padding-left: 27%;
+
+} */
 @media (max-width: 990px){
   .navbar-collapse {
       flex-grow: 0;
