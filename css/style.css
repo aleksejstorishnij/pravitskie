@@ -78,13 +78,14 @@ aside, nav, footer, header, section{
 .hero-section img {
   position: absolute;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: 50%;
     opacity: 0.8;
 }
-.intro {
+/* .intro {
     min-height: 100vh;
-}
+} */
 .navbar-collapse {
   flex-grow: 0;
   display: flex;
@@ -252,4 +253,45 @@ letter-spacing: 50px;
       display: flex;
       justify-content: flex-start;
     }
+    .main_title{
+      font-size: 5rem;
+      letter-spacing: 30px;
+      padding-top: 35%;
+    }
+}
+@media (max-width: 1024px){
+
+    .main_title{
+      font-size: 6rem;
+      letter-spacing: 30px;
+      padding-top: 38%;
+    }
+}
+@media (max-width: 595px){
+
+    .main_title{
+      font-size:4rem;
+      letter-spacing: 20px;
+      padding-top: 38%;
+    }
+}
+@media (max-width: 415px){
+
+    .main_title{
+      font-size: 3rem;
+      letter-spacing: 20px;
+      padding-top: 100%;
+    }
+    .advantagestext_view{
+        font-size: 30px;
+    }
+}
+@media (max-width: 360px){
+
+    .main_title{
+      font-size: 3rem;
+      letter-spacing: 15px;
+      padding-top: 100%;
+    }
+
 }
