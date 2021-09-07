@@ -69,7 +69,7 @@ html, body {
   justify-content: flex-end;
 }
 .nav-col {
-    background-color: #0869c9;
+    background-color: #151594;
 }
 
 .hero-section {
@@ -84,7 +84,7 @@ html, body {
 }
 .discriptions {
     color: #222120;
-    line-height: 2;
+    line-height: 1.7;
     /* letter-spacing: 0.1em;
     font-size: 16px;
     text-align: left; */
@@ -129,6 +129,34 @@ html, body {
    /* .intro {
        min-height: 100vh;
    } */
+   .circle_img{
+    object-fit: cover;
+     width:250px;
+     height: 250px!important;
+     border-radius:50%;
+     -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: gray; /* IE 6-9 */
+
+   }
+   .circle_img:hover{
+     webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
+   }
+
+   .data {
+    font-size: 14px;
+    line-height: 120%;
+    color: #C0C0C0;
+    padding: 20px 10px;
+}
 @media screen and (max-width: 991.98px) {
 
     .navbar-collapse {

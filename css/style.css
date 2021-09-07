@@ -105,7 +105,7 @@ aside, nav, footer, header, section{
 .about {
   position: relative;
   top: -58px;
-  background: #0060d0;
+  background: #151594;
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -147,13 +147,13 @@ font-family: 'Roboto', sans-serif;
 
 .discription {
   font-family: 'Roboto', sans-serif;
-  line-height: 2;
-  color: #ffffff61;
+  /* line-height: 2; */
+  color:white;
 
 }
 .discriptions {
     color: #222120;
-    line-height: 2;
+    line-height: 1.75;
     /* letter-spacing: 0.1em;
     font-size: 16px;
     text-align: left; */
@@ -163,11 +163,14 @@ font-family: 'Roboto', sans-serif;
     text-align: left; */
 }
 .nav-col {
-    background-color: #0869c9;
+    background-color: #151594;
     /* height: 60px; */
 }
 .advantages {
     background: white;
+}
+.mission{
+  background: #151594;
 }
 .advantagestext {
     display: flex;
@@ -178,17 +181,29 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
     color: black;
     line-height: 200%;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.1em; */
     font-weight: bold;
 }
-.advantagestext_view {
+.advantagestext_mission{
   display: flex;
   justify-content: center;
   padding: 36px;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Roboto', sans-serif;
-  color: #ffffff61;
+  color: white;
+  line-height: 200%;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+.advantagestext_view {
+  display: flex;
+  justify-content: flex-start;
+  padding: 36px;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
   line-height: 200%;
   letter-spacing: 0.1em;
   font-weight: bold;
