@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/team.css">
+
     <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/team.css">
     <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script> -->
 </head>
@@ -92,6 +93,9 @@
             </div>
             <p class="text-center data">ФИО</p>
             <p class="text-center data">Lorem ipsum dolor sit amet, consectetur.</p>
+            <button type="button" class="btn btn-outline-dark mx-auto mb-5 btn_more d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Читать больше
+</button>
           </div>
           <div class="col-12 col-md-6 col-lg-3 line">
 
@@ -190,7 +194,40 @@
     </div>
 
   </section>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Встреча на горе</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates suscipit reiciendis expedita velit provident dicta dolores unde corrupti quaerat officia.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam praesentium perspiciatis soluta reiciendis, et deleniti quos blanditiis a sunt, error? Dolorem a sed, ut nesciunt, vero et eaque fuga quas.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto, nisi qui accusantium laudantium reiciendis praesentium, pariatur nostrum rem doloremque suscipit voluptatum in doloribus consequatur atque voluptates quo deserunt sequi.</p>
+<!-- <div class="container"> -->
+<div class="embed-responsive embed-responsive-21by9">
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/YvbNYJLIgMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+  <!-- </div> -->
+      </div>
+
+
+    </div>
+  </div>
+</div>
   </main>
+  <script>
+  var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
           crossorigin="anonymous"></script>
