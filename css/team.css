@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -8,9 +8,9 @@ body {
   flex-direction: column;
   height: 100%;
   color: #21252900;
-  background-color: #121212;
+  /* background-color: #121212; */
   outline: none;
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -58,11 +58,11 @@ html, body {
   width: 100%;
 }
 
-.container {
+/* .container {
   max-width: 1700px;
   position: relative;
   margin-bottom: 40px;
-}
+} */
 .navbar-collapse {
   flex-grow: 0;
   display: flex;
@@ -154,8 +154,12 @@ filter: gray; /* IE 6-9 */
    .data {
     font-size: 14px;
     line-height: 120%;
-    color: #C0C0C0;
-    padding: 20px 10px;
+    color: black;
+    padding: 10px 10px;
+}
+.btn_more:hover{
+background-color: white !important;
+color: black;
 }
 @media screen and (max-width: 991.98px) {
 
