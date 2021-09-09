@@ -85,6 +85,7 @@ html, body {
 .discriptions {
     color: #222120;
     line-height: 1.7;
+    font-size: 14px;
     /* letter-spacing: 0.1em;
     font-size: 16px;
     text-align: left; */
@@ -126,9 +127,7 @@ html, body {
        letter-spacing: 0.1em;
        font-weight: bold;
    }
-   /* .intro {
-       min-height: 100vh;
-   } */
+
    .circle_img{
     object-fit: cover;
      width:250px;
@@ -159,7 +158,7 @@ filter: gray; /* IE 6-9 */
 }
 .btn_more:hover{
 background-color: white !important;
-color: black;
+color: black !important;
 }
 @media screen and (max-width: 991.98px) {
 
