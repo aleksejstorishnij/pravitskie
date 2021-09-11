@@ -134,7 +134,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto, nisi qui accusantium laudantium reiciendis praesentium, pariatur nostrum rem doloremque suscipit voluptatum in doloribus consequatur atque voluptates quo deserunt sequi.</p>
           <!-- <div class="container"> -->
           <div class="embed-responsive embed-responsive-21by9">
-          <video  width="500px" height="400px" controls="controls" poster="posterimage.jpg">
+          <video id="video_presentation"  width="500px" height="400px" controls="controls" poster="posterimage.jpg">
             <source src="./video/Strelec.ogv" type='video/ogg; codecs="theora, vorbis"'>
    <source src="./video/Strelec.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
    <source src="./video/Strelec.webm" type='video/webm; codecs="vp8, vorbis"'>
@@ -172,7 +172,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto, nisi qui accusantium laudantium reiciendis praesentium, pariatur nostrum rem doloremque suscipit voluptatum in doloribus consequatur atque voluptates quo deserunt sequi.</p>
           <!-- <div class="container"> -->
           <div class="embed-responsive embed-responsive-21by9">
-          <video   controls="controls" poster="posterimage.jpg">
+          <video id="video_presentation" width="500px" height="400px"  controls="controls" poster="posterimage.jpg">
             <source src="./video/Golubevy.ogv" type='video/ogg; codecs="theora, vorbis"'>
    <source src="./video/Golubevy.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
    <source src="./video/Golubevy.webm" type='video/webm; codecs="vp8, vorbis"'>
@@ -246,7 +246,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto, nisi qui accusantium laudantium reiciendis praesentium, pariatur nostrum rem doloremque suscipit voluptatum in doloribus consequatur atque voluptates quo deserunt sequi.</p>
           <!-- <div class="container"> -->
           <div class="embed-responsive embed-responsive-21by9">
-          <video   controls="controls" poster="posterimage.jpg">
+          <video id="video_presentation"  width="500px" height="400px"  controls="controls" poster="posterimage.jpg">
             <source src="./video/Petric.ogv" type='video/ogg; codecs="theora, vorbis"'>
    <source src="./video/Petric.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
    <source src="./video/Petric.webm" type='video/webm; codecs="vp8, vorbis"'>
@@ -388,7 +388,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto, nisi qui accusantium laudantium reiciendis praesentium, pariatur nostrum rem doloremque suscipit voluptatum in doloribus consequatur atque voluptates quo deserunt sequi.</p>
           <!-- <div class="container"> -->
           <div class="embed-responsive embed-responsive-21by9">
-          <video   controls="controls" poster="posterimage.jpg">
+          <video id="video_presentation"  width="500px" height="400px"  controls="controls" poster="posterimage.jpg">
             <source src="./video/Aleksandrovich.ogv" type='video/ogg; codecs="theora, vorbis"'>
    <source src="./video/Aleksandrovich.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
    <source src="./video/Aleksandrovich.webm" type='video/webm; codecs="vp8, vorbis"'>
@@ -461,7 +461,11 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto, nisi qui accusantium laudantium reiciendis praesentium, pariatur nostrum rem doloremque suscipit voluptatum in doloribus consequatur atque voluptates quo deserunt sequi.</p>
           <!-- <div class="container"> -->
           <div class="embed-responsive embed-responsive-21by9">
-          <iframe width="100%" height="360" src="https://www.youtube.com/embed/YvbNYJLIgMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video  id="video_presentation"  width="500px" height="400px" controls="controls" poster="posterimage.jpg">
+            <source src="./video/Timakova.ogv" type='video/ogg; codecs="theora, vorbis"'>
+   <source src="./video/Timakova.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+   <source src="./video/Timakova.webm" type='video/webm; codecs="vp8, vorbis"'>
+          </video>
           </div>
 
           <!-- </div> -->
@@ -495,7 +499,11 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto, nisi qui accusantium laudantium reiciendis praesentium, pariatur nostrum rem doloremque suscipit voluptatum in doloribus consequatur atque voluptates quo deserunt sequi.</p>
           <!-- <div class="container"> -->
           <div class="embed-responsive embed-responsive-21by9">
-          <iframe width="100%" height="360" src="https://www.youtube.com/embed/YvbNYJLIgMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video  id="video_presentation"  width="500px" height="400px" controls="controls" poster="posterimage.jpg">
+            <source src="./video/Goncharova.ogv" type='video/ogg; codecs="theora, vorbis"'>
+   <source src="./video/Goncharova.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+   <source src="./video/Goncharova.webm" type='video/webm; codecs="vp8, vorbis"'>
+          </video>
           </div>
 
           <!-- </div> -->
@@ -660,6 +668,15 @@ var myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+  </script>
+
+<script>
+  function closeModal() {
+   document.getElementById('myModal').style.display = "none";
+
+   document.getElementById('video_presentation').pause();
+ }
+
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
