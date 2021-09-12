@@ -91,17 +91,7 @@ aside, nav, footer, header, section{
   display: flex;
   justify-content: flex-end;
 }
-/* .slogan {
-  width: 700px;
-  color: white;
-  position: relative;
-  top: 30%;
-  left: 15%;
-  font-size: 40px;
-  margin-bottom: 50px;
-	font-family: 'Roboto', sans-serif;
-	  font-style: normal;
-} */
+
 .about {
   position: relative;
   top: -58px;
@@ -208,6 +198,18 @@ font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1em;
   font-weight: bold;
 }
+.advantagestext_view_describe{
+  display: flex;
+  justify-content: flex-start;
+  /* padding: 36px; */
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  line-height: 200%;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
 .floatr {
     float: right;
 }
@@ -255,7 +257,18 @@ font-family: 'Roboto', sans-serif;
 letter-spacing: 50px;
      color: #fff;
      font-style: normal;
-     padding-top: 22%;
+     padding-top: 18%;
+   }
+   .discribe_tittle{
+   color: #fff;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  letter-spacing: 10px;
    }
 /* .title_buttom{
   padding-top: 37%;
