@@ -154,7 +154,7 @@ font-family: 'Roboto', sans-serif;
 }
 .nav-col {
     background-color: #151594;
-    /* height: 60px; */
+
 }
 .advantages {
     background: white;
@@ -210,7 +210,7 @@ font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1em;
   font-weight: bold;
 }
-.floatr {
+/* .floatr {
     float: right;
 }
 .dasd {
@@ -218,7 +218,7 @@ font-family: 'Roboto', sans-serif;
     width: 50%;
     height: 40px;
     background-color: #0869c9;
-}
+} */
 .text-center {
     text-align: center!important;
 }

@@ -68,10 +68,11 @@ html, body {
   display: flex;
   justify-content: flex-end;
 }
-.nav-col {
-    background-color: #0869c9;
-}
 
+.nav-col {
+    background-color: #151594;
+
+}
 .top {
     margin: 0 auto;
     width: 100%;
