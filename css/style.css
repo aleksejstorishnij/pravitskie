@@ -292,7 +292,7 @@ letter-spacing: 50px;
     .main_title{
       font-size: 6rem;
       letter-spacing: 30px;
-      padding-top: 38%;
+      padding-top: 35%;
     }
 }
 @media (max-width: 595px){
@@ -317,9 +317,12 @@ letter-spacing: 50px;
 @media (max-width: 360px){
 
     .main_title{
-      font-size: 3rem;
+      font-size: 2rem;
       letter-spacing: 15px;
       padding-top: 100%;
     }
-
+ .discribe_tittle{
+   font-size: 1rem;
+   letter-spacing: 5px;
+ }
 }
