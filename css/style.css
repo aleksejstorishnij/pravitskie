@@ -294,6 +294,9 @@ letter-spacing: 50px;
       letter-spacing: 30px;
       padding-top: 35%;
     }
+    .mission h4 {
+      font-size:20px; 
+    }
 }
 @media (max-width: 595px){
 
