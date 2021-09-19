@@ -142,8 +142,13 @@ button {
     padding-left: 8%;
 }
 
-
-
+.grid-custom img {
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+.grid-custom img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
 .hero-section {
     height: 530px;
     margin-top: -10px;
@@ -267,6 +272,7 @@ font-family: 'Roboto', sans-serif;
 .footer .nav-item a{
   color: white;
 }
+
 @media screen and (max-width: 1200px) {
     .title {
         font-size: 4rem;
