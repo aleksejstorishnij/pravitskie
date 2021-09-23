@@ -1,0 +1,24 @@
+.preloader {
+  position: fixed;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: rgb(48, 149, 232);
+  z-index: 100;
+}
+.preloader_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  background: url('../img/pr.gif') no-repeat 50% 50%;
+  background-size: 500px;
+}
+.loaded .preloader{
+  display: none;
+}
