@@ -4,13 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/bootstrap.css">
-      <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.js"></script> -->
-  <title>Document</title>
+      <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/preload.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>Главная</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class="preloader">
+    <div class="preloader_image"></div>
+
+
+  </div>
   <header >
 
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg nav-col ">
@@ -64,32 +73,28 @@
   </section>
   <section class="about slide_buttom" id="intro">
     <div class="container">
-      <!-- <div class="col-12">
-        <div class="heading" id="passport">Наша миссия</div>
-      </div> -->
+
 
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="col-12">
-            <!-- <div class="row" style="margin-top: 100px;">
-              <div class="advantagestext" id="passport">виденье тренинга</div>
-            </div> -->
+
             <div class="row" style="margin-top: 50px;">
-              <div class="advantagestext_view" id="passport">1Пет 4:10: "Служите друг другу, каждый тем даром, какой получил...."</div>
+              <div class="advantagestext_view" id="passport">1Пет 4:10: "Служите друг другу, каждый тем даром, какой получил..."</div>
             </div>
             <div class="row" style="margin-top: 50px;">
-              <div class="advantagestext_view_describe" id="passport">Пророческий тренинг для тех, кто ...</div>
+              <div class="advantagestext_view_describe" id="passport">Пророческий тренинг для тех, кто :</div>
             </div>
             <div class="row mt-2">
               <div class="col-2">
 
               </div>
               <div class="col-8">
-                <p class="discription"> хочет выявить свои духовные дары и возрастать в них ( пророческий, толкование иных языков, толкование снов и образов) для служения телу Христову и поместной церкви ;</p>
-                  <p class="discription"> любит ходатайствовать перед Богом и вести духовные битвы;</p>
-                    <p class="discription"> желает познать Бога как Говорящего и Слышащего для себя и других;</p>
-                      <p class="discription"> мечтает о том, чтобы Библия ожила и наполнилось сердце откровениями;</p>
-                        <p class="discription"> ожидает Слово от Господа для своей жизни, для жизни других через себя.</p>
+                <p class="discription"> хочет выявить свои духовные дары и возрастать в них ( пророческий, толкование иных языков, толкование снов и образов) для служения телу Христову и поместной церкви</p>
+                  <p class="discription"> любит ходатайствовать перед Богом и вести духовные битвы</p>
+                    <p class="discription"> желает познать Бога как Говорящего и Слышащего для себя и других</p>
+                      <p class="discription"> мечтает о том, чтобы Библия ожила и наполнилось сердце откровениями</p>
+                        <p class="discription"> ожидает Слово от Господа для своей жизни, для жизни других через себя</p>
 
               </div>
             <div class="col-2">
@@ -101,10 +106,7 @@
         </div>
       </div>
     </div>
-    <!-- <svg  viewbox="0 0 1440 180">
-      <path
-        d="M0 43.418h288c96 0 192 0 288 26.7 96 26.3 192 80.3 288 69.3s192-85 288-117.3c96-31.7 192-21.7 240-16l48 5.3V180H0z" />
-      </svg> -->
+
   </section>
   <section class="about slide_buttom advantages" id="intro">
     <div class="container" id="advantage">
@@ -145,7 +147,7 @@
                 <p class="text-center">
                   <img src="./img/face-detection.svg" alt="">
                 </p>
-                <h4 class="mt-0 text-center text-light">САМОИНДЕФИКАЦИЯ</h4>
+                <h4 class="mt-0 text-center text-light">САМОИНДЕФИКАЦИЯ.</h4>
                 <p class="discriptiont text-center text-light">
                   Кто я в Боге? Какой дар мне дан Богом.
                 </p>
@@ -485,21 +487,36 @@
       </div>
     </div>
   </section>
-  <!-- <section>
-    <div class="about dasd floatr">
-    </div>
-  </section> -->
 
-    <div class="container">
-    <div class="embed-responsive embed-responsive-21by9">
-  <iframe width="100%" height="560" src="https://www.youtube.com/embed/YvbNYJLIgMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
 
-      </div>
 
 
 
 </main>
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class=" col-6">
+        <img src="./img/logo.svg" alt="logo" height="40px" width="40px" >
+      </div>
+      <div class="col-6">
+          <p class=""><img src="./img/telephone.svg" alt="logo" height="20px" width="20px" > <a href="tel:+380506605931">+38 (050) 660-59-31</a></p>
+            <p class=""><img src="./img/mail.svg" alt="logo" height="20px" width="20px" > <a href="mailto:pravytskie@gmail.com">pravytskie@gmail.com</a></p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  <script>
+
+    $(function () {
+      setTimeout(function () {
+        $('body').addClass('loaded');
+      },5000);
+
+    });
+  </script>
 <script>
   $(window).scroll(function() {
     $('header').toggleClass('scroll', $(this).scrollTop() > 100);
@@ -508,6 +525,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-</body>
+
 </body>
 </html>
