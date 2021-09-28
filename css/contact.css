@@ -120,20 +120,12 @@ a{
     text-shadow: black 0 0 2px;
 
 }
-.footer li {
-  padding:0;
-}
-.footer{
-  background-color: rgb(0, 0, 0);
-  height: 100px;
-}
+
 .test{
   display: flex;
   align-items: center;
 }
-.footer .nav-item a{
-  color: white;
-}
+
 .cont {
   font-family: 'Roboto', sans-serif;
     font-size: 14px;
