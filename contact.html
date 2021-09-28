@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Контакты</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script> -->
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
-  <header >
-
+  <header>
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg nav-col">
-    <div class="container my-auto ">
-
+      <div class="container my-auto ">
         <a class="navbar-brand" href="index.html">
-        <img src="./img/logo.svg" alt="logo" height="40px" width="40px" ></a>
+          <img src="./img/logo.svg" alt="logo" height="40px" width="40px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,26 +34,21 @@
               <a class="nav-link " href="gallery.html">Галерея</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link " href="reviews.html">Отзывы</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active" href="contact.html">Контакты</a>
             </li>
-
           </ul>
-
         </div>
       </div>
-
     </nav>
-
-
-
   </header>
-<main class="main">
-  <section class="intro" id="top">
-
+  <main class="main">
+    <section class="intro" id="top">
       <div class="container mt-5 mb-5">
         <div class="row pt-5">
           <div class="d-none d-md-block col-md-2 pt-5">
-            <!-- <p class="cont">наши контакты *</p> -->
           </div>
           <div class="col-10 pt-5 ">
             <div class="col-12">
@@ -63,98 +57,84 @@
             <div class="col-12">
               <p class=" title-but ">заполненная форма</p>
             </div>
-
           </div>
         </div>
-
-
         <hr>
-          <form class="" action="telegram.php" method="post">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <p class="descripe mt-5">Чтобы написать Ваши свидетельства или пожелания достаточно <span class="add_words">заполнить форму</span>  <br></p>
+        <form class="" action="telegram.php" method="post">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <p class="descripe mt-5">Чтобы написать Ваши свидетельства или пожелания достаточно <span class="add_words">заполнить форму</span> <br></p>
+            </div>
+            <div class="col-12 col-md-8">
+              <form class="mt-5" action="telegram.php" method="POST">
+                <div class="form_box">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <label for="user_name">Имя пользователя:</label>
+                      <input type="text" placeholder="Ваше имя" class="rfield" id="name" name="name" pattern="[a-zA-Zа-яА-Я]+" minlength="1" maxlength="10" required />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="user_family">Фамилия пользователя</label>
+                      <input type="text" placeholder="Ваша фамилия" class="rfield" id="second_name" name="second_name" pattern="[a-zA-Zа-яА-Я]+" minlength="1" maxlength="15" required />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <label for="user_phone">Телефон пользователя:</label>
+                      <input type="phone" placeholder="0000000000" class="rfield" id="mobile" name="mobile" pattern="[0-9]{10}" minlength="10" maxlength="10" required />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="user_email">Введите email:</label>
+                      <input type="email" placeholder="example@sfs.com" class="rfield" id="email" name="email" pattern="^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})" required />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <label for="user_messege">Введите сообщение</label>
+                      <input type="text" placeholder="Ваше сообщение" class="rfield" id="subject" name="subject" rows="4" pattern="[0-9a-zA-Zа-яА-Я]+" minlength="1" maxlength="200" required />
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" id="button" class=" btn_submit btn btn-dark mb-2 mt-3" name="send" value="Submit Form">Отправить</button>
+              </form>
+            </div>
           </div>
-          <div class="col-12 col-md-8">
-            <form class="mt-5" action="mail.php" method="POST">
-
-              <div class="form_box">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <label for="user_name">Имя пользователя:</label>
-                <input type="text" placeholder="Ваше имя" class="rfield" id="name" name="name" pattern="[a-zA-Zа-яА-Я]+" minlength="1" maxlength="10" required />
-              </div>
-              <div class="col-12 col-md-6">
-                <label for="user_family">Фамилия пользователя</label>
-                <input type="text" placeholder="Ваша фамилия"class="rfield" id="second_name" name="second_name" pattern="[a-zA-Zа-яА-Я]+" minlength="1" maxlength="15" required />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <label for="user_phone">Телефон пользователя:</label>
-                <input type="text" placeholder="0000000000" class="rfield" id="mobile" name="mobile" pattern="[0-9]{10}" minlength="10" maxlength="10" required />
-              </div>
-              <div class="col-12 col-md-6">
-                <label for="user_email">Введите email:</label>
-                <input type="text" placeholder="example@sfs.com" class="rfield" id="email" name="email" pattern="^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})" required />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <label for="user_messege">Введите сообщение</label>
-                <textarea type="text" placeholder="Ваше сообщение" name="name" class="rfield" id="subject" name="subject" rows="4"  pattern="[0-9a-zA-Zа-яА-Я]+" minlength="1" maxlength="200"required></textarea>
-
-              </div>
-
-            </div>
-
-            </div>
-              <button type="submit" id="button" class=" btn_submit btn btn-dark mb-2 mt-3" name="send" value="Submit Form">Отправить</button>
-            </form>
-          </div>
-
-        </div>
-          </form>
+        </form>
         <hr>
         <div class="row">
           <div class="col-12 col-md-4">
-
             <p class="city">Барвенково</p>
             <p class="adress"> <br> Харьковская область, 64701</p>
-
             <p class="phone">Телефон: <a href="tel:+380506605931">+38 (050) 660-59-31</a></p>
             <p class="email">Email: <a href="mailto:pravytskie@gmail.com">pravytskie@gmail.com</a></p>
-
           </div>
           <div class="col-12 col-md-8">
             <div class="embed-responsive embed-responsive-21by9">
-
               <iframe class="embed-responsive-item" style="width:100%"
-             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1273.475026552449!2d37.00419218402838!3d48.92336767603328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1631825449410!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1273.475026552449!2d37.00419218402838!3d48.92336767603328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1631825449410!5m2!1sru!2sua" width="600" height="450"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
         </div>
       </div>
-
-  </section>
+    </section>
   </main>
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
+  <footer class="footer mt-auto bg-light">
+    <div class="container  py-3">
       <div class="row">
         <div class=" col-6">
-          <img src="./img/logo.svg" alt="logo" height="40px" width="40px" >
+          <img src="./img/logo.svg" alt="logo" height="40px" width="40px">
         </div>
         <div class="col-6">
-            <p class=""><img src="./img/telephone.svg" alt="logo" height="20px" width="20px" > <a href="tel:+380506605931">+38 (050) 660-59-31</a></p>
-              <p class=""><img src="./img/mail.svg" alt="logo" height="20px" width="20px" > <a href="mailto:pravytskie@gmail.com">pravytskie@gmail.com</a></p>
+          <p>Наши контакты</p>
+          <p class=""><img src="./img/telephone.svg" alt="logo" height="20px" width="20px"> <a href="tel:+380506605931">+38 (050) 660-59-31</a></p>
+          <p class=""><img src="./img/mail.svg" alt="logo" height="20px" width="20px"> <a href="mailto:pravytskie@gmail.com">pravytskie@gmail.com</a></p>
         </div>
       </div>
-
     </div>
-</footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-          crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
